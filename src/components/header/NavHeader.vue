@@ -78,6 +78,7 @@ li{
   padding: 50px 12px;
   text-transform: uppercase;
   font-size: 12px;
+  font-weight: 600;
   list-style: none;
   &.active{
   position: relative;

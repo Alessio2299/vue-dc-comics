@@ -19,7 +19,7 @@ export default {
   },
   data: function(){
     return{
-      nameList: "DcComics",
+      nameList: "Dc Comics",
       listNavFooter:[
         {
           name: "Character",
@@ -56,22 +56,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  ul{
-    color: #fff;
-    margin-right: 20px;
-    li{
-    list-style: none;
-    line-height: 25px;
-    font-size: 15px;
-      &.titleList{
-        text-transform: uppercase;
-        padding: 30px 0 10px 0;
-        font-size: 16px;
-      }
-      a{
-        text-decoration: none;
-        color: rgb(149, 149, 149);
-      }
-    }
-  }
+  @import "../../assets/style/footerNav.scss";
 </style>
