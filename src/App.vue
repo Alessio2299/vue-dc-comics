@@ -3,6 +3,7 @@
     <HeaderPage />
     <MainPage />
     <InfoMain />
+    <FooterPage />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import HeaderPage from "../src/components/HeaderPage.vue";
 import MainPage from "../src/components/MainPage.vue";
 import InfoMain from "../src/components/InfoMain.vue";
+import FooterPage from "../src/components/FooterPage.vue";
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
     HeaderPage,
     MainPage,
     InfoMain,
+    FooterPage
   }
 }
 </script>

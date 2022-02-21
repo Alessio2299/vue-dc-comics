@@ -10,6 +10,12 @@
 </template>
 
 <script>
+import digitalComics from "../assets/img/buy-comics-digital-comics.png";
+import merchandise from "../assets/img/buy-comics-merchandise.png";
+import subscription from "../assets/img/buy-comics-subscriptions.png";
+import shopLocator from "../assets/img/buy-comics-shop-locator.png";
+import powerVisa from "../assets/img/buy-dc-power-visa.svg";
+
 export default {
   name: 'InfoMain',
   data: function (){
@@ -17,23 +23,23 @@ export default {
       listInfo:[
         {
           name: "Digital Comics",
-          image: "../assets/img/buy-comics-digital-comics.png"
+          image: digitalComics
         },
         {
           name: "DC Merchandise",
-          image: "../assets/img/buy-comics-merchandise.png"
+          image: merchandise
         },
         {
           name: "Subscription",
-          image: "../assets/img/buy-comics-subscriptions.png"
+          image: subscription
         },
         {
           name: "Comic Shop Locator",
-          image: "../assets/img/buy-comics-shop-locator.png"
+          image: shopLocator
         },
         {
           name: "DC Power Visa",
-          image: "../assets/img/buy-dc-power-visa.png"
+          image: powerVisa
         }
       ]
     }
@@ -44,15 +50,15 @@ export default {
 <style scoped lang="scss">
   .info{
     background-color: rgb(5, 130, 249);
-    height: 200px;
     .content-info{
       display: flex;
       justify-content: space-around;
       align-items: center;
       width: 70%;
       margin: auto;
+      padding: 40px 0;
       .card{
-        height: 70px;
+        height: 55px;
         img{
           height: 100%;
           vertical-align: middle;

@@ -1,13 +1,18 @@
 <template>
-  <div></div>
+  <NavFooter />
 </template>
 
 <script>
+import NavFooter from "./footer/NavFooter.vue";
+
 export default {
-  name: 'FooterPage'
+  name: 'FooterPage',
+  components: {
+    NavFooter
+  }
 }
 </script>
 
 <style scoped lang="scss">
-
+  
 </style>
