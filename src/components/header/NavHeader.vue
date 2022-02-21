@@ -69,10 +69,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-ul{
-  margin: 0;
-}
+<style scoped lang="scss">  
 li{
   display: inline-block;
   padding: 50px 12px;

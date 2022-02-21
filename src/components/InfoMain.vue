@@ -64,7 +64,7 @@ export default {
           vertical-align: middle;
         }
         span{
-          color: #fff;
+          color: rgb(203, 229, 254);
           text-transform: uppercase;
           margin-left: 10px;
           font-size: 13px;
