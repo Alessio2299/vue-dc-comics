@@ -1,10 +1,12 @@
 <template>
-  <div class="navFooter">
-    <div class="container">
-      <DcComics />
-      <DcNav />
-      <SitesNav />
-      <ShopNav />
+  <div class="navList">
+    <div class="navFooter">
+      <div class="container">
+        <DcComics />
+        <DcNav />
+        <SitesNav />
+      </div>
+      <img src="../../assets/img/dc-logo-bg.png">
     </div>
   </div>
 </template>
@@ -13,7 +15,6 @@
 import DcComics from "./DcComics.vue";
 import DcNav from "./DcNav.vue";
 import SitesNav from "./SitesNav.vue";
-import ShopNav from "./ShopNav.vue";
 
 export default {
   name: 'NavFooter',
@@ -21,18 +22,29 @@ export default {
     DcComics,
     DcNav,
     SitesNav,
-    ShopNav
   }
 }
 </script>
 
 <style scoped lang="scss">
-  .navFooter{
+  .navList{
     background-image: url("../../assets/img/footer-bg.jpg");
-    .container{
+    height: 420px;
+    overflow: hidden;
+    .navFooter{
+      display: flex;
       width: 70%;
       margin: auto;
-      display: flex;
+      position: relative;
+      justify-content: space-between;
+      .container{ 
+        display: flex;
+      }
+      img{
+        position: absolute;
+        right: 0;
+        transform: translateY(-10%);
+      }
     }
   }
 </style>

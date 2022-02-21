@@ -71,10 +71,11 @@ export default {
     li{
       list-style: none;
       line-height: 25px;
+      font-size: 15px;
       &.titleList{
         text-transform: uppercase;
         padding: 30px 0 10px 0;
-        font-size: 20px;
+        font-size: 16px;
       }
       a{
         text-decoration: none;
