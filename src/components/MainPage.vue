@@ -2,19 +2,25 @@
   <main class="container">
     <MainJumbo />
     <div class="content">
-      <CurrentSeries />
+      <div class="title-section">
+        <span>current series</span>
+      </div>
+      <SingleCard v-for="(comic,index) in comics" :key="index" :serie="comic" />
+    </div>
+    <div class="button">
+        <span>Load more</span>
     </div>
   </main>
 </template>
 
 <script>
   import MainJumbo from "./main/MainJumbo.vue";
-  import CurrentSeries from "./main/CurrentSeries.vue"
+  import SingleCard from "./main/SingleCard.vue"
   export default {
     name: 'MainPage',
     components: {
       MainJumbo,
-      CurrentSeries
+      SingleCard
     },
     data(){
       return{
@@ -99,13 +105,42 @@
 
 <style scoped lang="scss">
 .container{
-  background-color: #000;
-  .content{
+  background-color: rgb(28, 28, 28);
+  .content{ 
     width: 70%;
     margin: auto;
     color: #fff;
-    padding: 50px 0;
+    padding: 30px 0;
     font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    .title-section{
+      position: absolute;
+      bottom: 97%;
+      left: 0;
+      span{
+        text-transform: uppercase;
+        padding: 12px 30px;
+        background-color: rgb(5, 130, 249);
+        font-weight: 600;
+        font-size: 20px;
+      }
+    }
+  }
+  .button{
+    text-align: center;
+    span{
+      text-transform: uppercase;
+      padding: 12px 70px;
+      background-color: rgb(5, 130, 249);
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-block;
+      margin: 20px 0;
+      color: #fff;
+    }
   }
 }
 </style>
