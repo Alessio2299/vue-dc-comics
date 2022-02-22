@@ -11,7 +11,7 @@
 import BottomSocial from "./BottomSocial.vue";
 
 export default {
-  name: 'SitesNav',
+  name: 'BottomFooter',
   components: {
     BottomSocial
   }

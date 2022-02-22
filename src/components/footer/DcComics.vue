@@ -1,22 +1,15 @@
 <template>
-  <div class="listNav">
-    <ul>
-      <li class="titleList">{{nameList}}</li>
-      <li v-for="(item,index) in listNavFooter" :key="index">
-        <a :href="item.url">{{item.name}}</a>
-      </li>
-   </ul>
-  <ShopNav />
-  </div>
+  <ul>
+    <li class="titleList">{{nameList}}</li>
+    <li v-for="(item,index) in listNavFooter" :key="index">
+      <a :href="item.url">{{item.name}}</a>
+    </li>
+  </ul>
 </template>
 
 <script>
-import ShopNav from "./ShopNav.vue";
 export default {
   name: 'DcComics',
-  components: {
-    ShopNav
-  },
   data: function(){
     return{
       nameList: "Dc Comics",

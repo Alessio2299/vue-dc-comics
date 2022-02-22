@@ -3,6 +3,7 @@
     <div class="navFooter">
       <div class="container">
         <DcComics />
+        <ShopNav />
         <DcNav />
         <SitesNav />
       </div>
@@ -15,6 +16,7 @@
 import DcComics from "./DcComics.vue";
 import DcNav from "./DcNav.vue";
 import SitesNav from "./SitesNav.vue";
+import ShopNav from "./ShopNav.vue";
 
 export default {
   name: 'NavFooter',
@@ -22,6 +24,7 @@ export default {
     DcComics,
     DcNav,
     SitesNav,
+    ShopNav
   }
 }
 </script>
@@ -37,8 +40,12 @@ export default {
       margin: auto;
       position: relative;
       justify-content: space-between;
+      height: 100%;
       .container{ 
         display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100%;
       }
       img{
         position: absolute;
